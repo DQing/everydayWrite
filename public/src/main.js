@@ -3,7 +3,8 @@ import React from "react";
 import {render} from "react-dom";
 import App from "./components/App";
 import Home from './components/Home'
-import LoginAndRegister from  './components/LoginAndRegister'
+import LoginAndRegister from  './components/loginAndResiger/LoginAndRegister'
+import lookDaily from  './components/lookDaily/App'
 
 
 render(
@@ -13,6 +14,7 @@ render(
             <IndexRoute component={Home}/>
             <Route path="Home" component={Home}/>
             <Route path="LoginAndRegister" component={LoginAndRegister}/>
+            <Route path="lookDaily" component={lookDaily}/>
         </Route>
     </Router>,
     document.getElementById('App'));

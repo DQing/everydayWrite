@@ -19,7 +19,7 @@ var Login = React.createClass({
                      if(data==='1'){
                         alert("嘻嘻,登陆成功啦");
                         this.props.onName(username);
-                        browserHistory.push('/');
+                        browserHistory.push('/lookDaily');
                     }
                     if(data==='2'){
                         alert("哎呀,密码不对啦,请重新登陆吧");
