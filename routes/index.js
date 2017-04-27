@@ -7,5 +7,6 @@ const router = express.Router();
 
 router.post('/login', userAction.selectOneToLogin);
 router.post('/register', userAction.saveToRegister);
+router.get('/look', userAction.findDaily);
 
 module.exports = router;

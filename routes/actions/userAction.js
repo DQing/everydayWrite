@@ -8,12 +8,12 @@ exports.selectOneToLogin = function (req, res) {
             res.send('0');
         }
         else {
-          if (result[0].password === req.body.pwd) {
-            res.send('1');
-        }else {
-            res.send('2');
+            if (result[0].password === req.body.pwd) {
+                res.send('1');
+            } else {
+                res.send('2');
+            }
         }
-      }
     })
 };
 
@@ -27,6 +27,18 @@ exports.saveToRegister = function (req, res) {
         }
         else {
             res.send("1").end();
+        }
+    })
+};
+
+exports.findDaily = function (req,res) {
+    const status = 'All';
+    db.lookDaily(status, function (result) {
+        if (result === '0') {
+            res.send('0').end();
+        }
+        else {
+            res.send(result).end();
         }
     })
 };
