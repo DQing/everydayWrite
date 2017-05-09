@@ -12,6 +12,7 @@ const App = React.createClass({
     render() {
         return (
             <div>
+                hello
                 {this.props.children && React.cloneElement(this.props.children, {
                     onName: this.getName,
                     name: this.state.name

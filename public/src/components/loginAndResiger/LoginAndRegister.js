@@ -1,6 +1,5 @@
 var React = require('react');
 import Login from  './Login';
-// const {'default':Login} = require('./Login');
 import  Register from  './Register';
 
 
